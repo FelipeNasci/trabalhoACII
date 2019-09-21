@@ -37,20 +37,17 @@ As duas matrizes serão somadas e multiplicadas por uma função trigonométrica
 O tempo de execução final de cada algoritmo é obtido através de uma média, onde o mesmo é executado n vezes e seu tempo de execução é armazenado no vetor tempoTotal[].
 
 ```C++
-	
-	clock_t inicio, fim;
-    double tempoTotal[n];	//Armazena tempos de execução do algorítmo
+clock_t inicio, fim;
+double tempoTotal[n];	//Armazena tempos de execução do algorítmo
 
-    for (int k = 0; k < n; k++){
-        
-        inicio = clock();
+for (int k = 0; k < n; k++){
+    
+    inicio = clock();
+   		//... Código
+    fim = clock();
 
-       		//... Código
-
-        fim = clock();
-
-        tempoTotal[k] = 1000*(double)(fim-inicio) / (double)(CLOCKS_PER_SEC);
-    }
+    tempoTotal[k] = (double)(fim - inicio);
+}
 ```
 
 ### _teste1()_
@@ -163,4 +160,8 @@ for (int i = 0; i < linhas; i++)
 
 ## Resultados
 Nesta Seção, serão apresentados os resultados das execucões do algoritmo, assim como os gráficos de execução de cada melhoria feita. 
+
+Em uma análise geral, percebe-se uma melhoria gradativa em cada otimização realizada ao longo dos testes. Sendo o _teste6()_ o que obteve melhor desempenho, tendo em vista que é o algoritmo que melhor utiliza o Princípio da Localidade Espacial.
+
+Perceba que o _teste8()_ também apresenta resultados satisfatórios, uma vez que a cada iteração o mesmo deve obter dois número aleatório para aplicar a uma função seno e cosseno.
 
