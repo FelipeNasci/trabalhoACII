@@ -170,20 +170,20 @@ Perceba que o _teste8()_ também apresenta resultados satisfatórios, uma vez qu
 
 ### Tempos de execução em 100 iterações para cada _teste()_
 
-[tempoExecucaoTeste1](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste1.png?raw=true)
+![tempoExecucaoTeste1](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste1.png?raw=true)
 
-[tempoExecucaoTeste2](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste2.png?raw=true)
+![tempoExecucaoTeste2](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste2.png?raw=true)
 
-[tempoExecucaoTeste3](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste3.png?raw=true)
+![tempoExecucaoTeste3](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste3.png?raw=true)
 
-[tempoExecucaoTeste4](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste4.png?raw=true)
+![tempoExecucaoTeste4](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste4.png?raw=true)
 
-[tempoExecucaoTeste5](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste5.png?raw=true)
+![tempoExecucaoTeste5](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste5.png?raw=true)
 
-[tempoExecucaoTeste6](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste6.png?raw=true)
+![tempoExecucaoTeste6](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste6.png?raw=true)
 
-[tempoExecucaoTeste7](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste7.png?raw=true)
+![tempoExecucaoTeste7](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste7.png?raw=true)
 
-[tempoExecucaoTeste8](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste8.png?raw=true)
+![tempoExecucaoTeste8](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste8.png?raw=true)
 
 []()
