@@ -1,7 +1,7 @@
 # trabalhoACII
 Projeto final para a disciplina de Arquitetura de Computadores II
 
-## [Parte 1 - Otimização de Memória Cache](https://github.com/FelipeNasci/trabalhoACII/tree/master/Parte%201)
+## [Parte 1 - Otimização de Memória Cache](https://github.com/FelipeNasci/trabalhoACII/tree/master/Parte%201#parte-1---otimiza%C3%A7%C3%A3o-de-mem%C3%B3ria-cache)
 
 *	Escolha um programa de código aberto na internet ou escreva um código novo
 Código deve ser em C++
