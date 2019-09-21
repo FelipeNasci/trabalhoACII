@@ -165,3 +165,25 @@ Em uma análise geral, percebe-se uma melhoria gradativa em cada otimização re
 
 Perceba que o _teste8()_ também apresenta resultados satisfatórios, uma vez que a cada iteração o mesmo deve obter dois número aleatório para aplicar a uma função seno e cosseno.
 
+[tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucao.PNG?raw=true)
+
+
+### Tempos de execução em 100 iterações para cada _teste()_
+
+[tempoExecucaoTeste1](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste1.png?raw=true)
+
+[tempoExecucaoTeste2](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste2.png?raw=true)
+
+[tempoExecucaoTeste3](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste3.png?raw=true)
+
+[tempoExecucaoTeste4](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste4.png?raw=true)
+
+[tempoExecucaoTeste5](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste5.png?raw=true)
+
+[tempoExecucaoTeste6](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste6.png?raw=true)
+
+[tempoExecucaoTeste7](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste7.png?raw=true)
+
+[tempoExecucaoTeste8](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucaoTeste8.png?raw=true)
+
+[]()
