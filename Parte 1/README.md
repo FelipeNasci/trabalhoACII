@@ -165,7 +165,7 @@ Em uma análise geral, percebe-se uma melhoria gradativa em cada otimização re
 
 Perceba que o _teste8()_ também apresenta resultados satisfatórios, uma vez que a cada iteração o mesmo deve obter dois número aleatório para aplicar a uma função seno e cosseno.
 
-[tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucao.PNG?raw=true)
+![tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%201/img/tempoExecucao.PNG?raw=true)
 
 
 ### Tempos de execução em 100 iterações para cada _teste()_
