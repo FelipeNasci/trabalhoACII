@@ -238,3 +238,5 @@ A seguir, a comparação entre os tempos de cada teste.
 ## Resultados e Discussão - Novo Código
 
 Usando um array multidimensional de igual número de linhas e colunas, pode-se ter um noção do ganho de performance conforme aumenta-se o tamanho do array, como pode-se ver descrito na tabela e gráficos abaixo.
+
+![tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%202/img/Tempo%20Execu%C3%A7%C3%A3o.PNG?raw=true)
