@@ -8,112 +8,85 @@
 
 using namespace std;
 
-void clearCache()
-{
-    unsigned long cls[6144];  //CACHE DE 6k
-    for (long i = 0; i <  6144; i++) {
-        cls[i] = 0;
-    }
-}
-
-void teste1(int tam)
+void teste1(int linhas, int colunas)
 {
     clock_t t1, t2;
     float tempo1, tempo2;
 
-    int i, j;
-    int** lista = new int* [tam];
-    for (i = 0; i < tam; ++i) {
-        lista[i] = new int[tam];
-    }
+    int i, j, k;
 
-    int** soma = new int* [tam];
-    for (i = 0; i < tam; ++i) {
-        soma[i] = new int[tam];
-    }
+    int lista[linhas][colunas];
+    int soma[linhas][colunas];
+
+    // int** lista = new int* [linhas];
+    // for (i = 0; i < linhas; ++i) {
+    //     lista[i] = new int[colunas];
+    // }
+
+    // int** soma = new int* [linhas];
+    // for (i = 0; i < linhas; ++i) {
+    //     soma[i] = new int[colunas];
+    // }
     
     // Inicialização do Array
-    for (i = 0; i < tam; ++i) {
-        for (j = 0; j < tam; ++j) {
-            lista[i][j] = j;  
+    for (i = 0; i < linhas; ++i) {
+        for (j = 0; j < colunas; ++j) {
+            lista[i][j] = 50;
+            soma[i][j] = 50;  
         }
     }
 
     t1 = clock();
     // Somando os dois arrays de maneira sequencial
-    for (i = 0; i < tam; ++i) {
-        for (j = 0; j < tam; ++j) {
-            soma[i][j] += lista[i][j];
-            // cout << soma[i][j] << endl;
-        }
-    }
-    tempo1 = ((float)(clock() - t1)/CLOCKS_PER_SEC);
-    cout << tempo1 << "s" << endl;
-
-    // cout << (tempo1 - tempo2) << endl;
-    // cout << (tempo2 / tempo1) << endl;
-
-    delete(lista);
-    delete(soma);
-}
-
-void teste2(int tam) 
-{
-    clock_t t1, t2;
-    float tempo1, tempo2;
-
-    int i, j;
-    int** lista = new int* [tam];
-    for (i = 0; i < tam; ++i) {
-        lista[i] = new int[tam];
-    }
-
-    int** soma = new int* [tam];
-    for (i = 0; i < tam; ++i) {
-        soma[i] = new int[tam];
-    }
-    
-    // Inicialização do Array
-    for (i = 0; i < tam; ++i) {
-        for (j = 0; j < tam; ++j) {
-            lista[i][j] = j;  
-        }
-    }
-
-    t2 = clock();
-    // Somando dois arrays usando paralelismo
-    #pragma omp parallel num_threads(NUM_THREADS)
-    {
-        #pragma omp for private(i, j) collapse(2)
-        for (i = 0; i < tam; ++i) {
-            for (j = 0; j < tam; ++j) {
-                soma[i][j] += lista[i][j];// * round(cos(i) + sin(j));
+    for (k = 0; k < 100; ++k) {
+        for (i = 0; i < linhas; ++i) {
+            for (j = 0; j < colunas; ++j) {
+                soma[i][j] += lista[i][j];
             }
         }
     }
+    
+    tempo1 = ((float)(clock() - t1)/CLOCKS_PER_SEC);
+    cout << tempo1 << "s" << endl;
+
+
+    t2 = clock();
+    // Somando dois arrays usando paralelismo
+    // #pragma omp parallel num_threads(NUM_THREADS)
+    // {
+    //     #pragma omp for private(i, j) collapse(2)
+    // #pragma omp parallel for num_threads(4)
+    // for (k = 0; k < 100; ++k){
+    //     for (i = 0; i < linhas; ++i) {
+    //         for (j = 0; j < colunas; ++j) {
+    //             soma[i][j] += lista[i][j];
+    //         }
+    //     }
+    // }
+    // }
+
+    #pragma omp parallel for num_threads(4)
+        for(long k = 0; k < 10000; k++)
+	    for(int i = 0; i < linhas; i++){
+		for(int j = 0; j < colunas; j++){
+		    soma[i][j] += lista[i][j];
+		}
+	    }
     tempo2 = ((float)(clock() - t2)/CLOCKS_PER_SEC);
     cout << tempo2 << "s" << endl;
 
+    // delete(lista);
+    // delete(soma);
+
     // cout << (tempo1 - tempo2) << endl;
     // cout << (tempo2 / tempo1) << endl;
-
-    delete(lista);
-    delete(soma);
 }
 
 int main()
-{
-    int tam;
-    tam = 10000;
-    
-    // for (int i = 100; i < 1000; i += 100) {
-        // tam = i;
-        // clearCache();
-        teste1(tam);
-
-        // clearCache();
-        teste2(tam);
-    // }
+{   
+    teste1(150, 1500);
+    teste1(250, 2500);
+    teste1(300, 3000);
 
     return 0;
 }
