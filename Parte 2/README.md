@@ -15,8 +15,7 @@ Este trabalho tentou paralelizar o código escrito no trabalho anterior, *Otimiz
 ## Objetivos
 
 - Paralelizar o código do trabalho anterior, *Otimização de Memória Cache*, usando o OpenMP;
-  - Comparar e entender os resultados encontrados;
-- Escrever novo código que faça uso adequado do OpenMP.
+  - Comparar e entender os resultados encontrados.
 
 ## Métodos - Modificando o Código Existente
 
@@ -163,7 +162,7 @@ Em seguida, se identificou em cada um dos 8 testes, quais laços eram os respons
     }
 ```
 
-## Métodos - Escrevendo Novo Código Paralelo
+<!-- ## Métodos - Escrevendo Novo Código Paralelo
 
 Este código foi contido num único arquivo, `paralel.cpp`.
 
@@ -225,16 +224,14 @@ for (i = 0; i < tam; ++i) {
     }
 }
 cout << (float)(clock() - t2)/CLOCKS_PER_SEC << "s" << endl;
-```
+``` -->
 
 <!-- Ademais, a fim de se ter noção a partir de que tamanho quadrado de `lista` começa a fazer sentido usar paralelização, foi colocado a chamada da função `teste1()` dentro de um laço, atualizando o valor de `tam` a cada execução: começando em $250$ e terminando em $10000$, passo $250$. -->
 
 ## Resultados e Discussão - Modificações
 
-Quando se aplicou o OpenMP ao primeiro trabalho, *Otimização de Memória Cache*, percebeu-se que houve um aumento nos tempos de execução. Isto se deve ao fato de que a instância usada era pequena e o overhead da criação e gerenciamento de *threads* terminou por atrasar a execução.
+Quando se aplicou o OpenMP ao primeiro trabalho, *Otimização de Memória Cache*, percebeu-se que houve uma pequena diminuição nos tempos de execução. Isto se deve ao fato de que a instância usada era pequena e o overhead da criação e gerenciamento de *threads* terminou por atrasar a execução.
 
 A seguir, a comparação entre os tempos de cada teste.
 
-## Resultados e Discussão - Novo Código
-
-Usando um array multidimensional de igual número de linhas e colunas, pode-se ter um noção do ganho de performance conforme aumenta-se o tamanho do array, como pode-se ver descrito na tabela e gráficos abaixo.
+![tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%202/img/Tempo%20Execu%C3%A7%C3%A3o.PNG?raw=true)
