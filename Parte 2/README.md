@@ -234,4 +234,4 @@ Quando se aplicou o OpenMP ao primeiro trabalho, *Otimização de Memória Cache
 
 A seguir, a comparação entre os tempos de cada teste.
 
-![tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%202/img/Tempo%20Execu%C3%A7%C3%A3o.PNG?raw=true)
+![tempoExecucao](https://github.com/FelipeNasci/trabalhoACII/blob/master/Parte%202/img/tempoExecucao.PNG?raw=true)
