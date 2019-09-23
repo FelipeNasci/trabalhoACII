@@ -1,4 +1,4 @@
-/*#include <iostream>
+#include <iostream>
 #include <time.h>
 #include <stdlib.h>
 #include <omp.h>
@@ -104,7 +104,7 @@ void teste2(int tam)
 int main()
 {
     int tam;
-    tam = 10000;
+    tam = 12000;
 
     // for (int i = 100; i < 1000; i += 100) {
         // tam = i;
@@ -117,5 +117,3 @@ int main()
 
     return 0;
 }
-
-*/
