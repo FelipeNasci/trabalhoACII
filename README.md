@@ -13,7 +13,7 @@ Código deve ser em C++
 	- Que mudanças você propôs
 	- Quais as melhorias em desempenho? (apresentar gráficos ou tabelas)
 
-## [Parte 2 - Programação Paralela](https://github.com/FelipeNasci/trabalhoACII/tree/master/Parte%202)
+## [Parte 2 - Programação Paralela](https://github.com/FelipeNasci/trabalhoACII/tree/master/Parte%202#parte-2---programa%C3%A7%C3%A3o-paralela)
 
 *	Analise seu código em busca de partes que não exploram corretamente o paralelismo
 *	Apresente as modificações e apresenta uma comparação no tempo de execução

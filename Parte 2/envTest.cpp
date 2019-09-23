@@ -310,7 +310,7 @@ void calculaTempo(double tempoTotal[], int n){
     double soma = 0;
     for (int i = 0; i < n; i++){
         soma += (tempoTotal[i] / ((double)(CLOCKS_PER_SEC) / 1000));
-        cout << tempoTotal[i] << endl;
+        //cout << tempoTotal[i] << endl;
     }
 
     cout << "Tempo total: " << soma << "ms\n\n";

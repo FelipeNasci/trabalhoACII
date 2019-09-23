@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 #include <time.h>
 #include <stdlib.h>
 #include <omp.h>
@@ -31,11 +31,11 @@ void teste1(int tam)
     for (i = 0; i < tam; ++i) {
         soma[i] = new int[tam];
     }
-    
+
     // Inicialização do Array
     for (i = 0; i < tam; ++i) {
         for (j = 0; j < tam; ++j) {
-            lista[i][j] = j;  
+            lista[i][j] = j;
         }
     }
 
@@ -57,7 +57,7 @@ void teste1(int tam)
     delete(soma);
 }
 
-void teste2(int tam) 
+void teste2(int tam)
 {
     clock_t t1, t2;
     float tempo1, tempo2;
@@ -72,11 +72,11 @@ void teste2(int tam)
     for (i = 0; i < tam; ++i) {
         soma[i] = new int[tam];
     }
-    
+
     // Inicialização do Array
     for (i = 0; i < tam; ++i) {
         for (j = 0; j < tam; ++j) {
-            lista[i][j] = j;  
+            lista[i][j] = j;
         }
     }
 
@@ -105,7 +105,7 @@ int main()
 {
     int tam;
     tam = 10000;
-    
+
     // for (int i = 100; i < 1000; i += 100) {
         // tam = i;
         // clearCache();
@@ -117,3 +117,5 @@ int main()
 
     return 0;
 }
+
+*/
